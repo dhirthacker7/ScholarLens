@@ -1,0 +1,183 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling the body */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Ensure the sidebar stays fixed */
+  height: 100%; /* Take full height of the page */
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Scrollable sidebar if content overflows */
+}
+
+/* Sidebar header */
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input and button styles for sidebar */
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:nth-of-type(2) {
+  background-color: #008CBA;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #007bb5;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 260px; /* Give space for sidebar */
+  padding: 20px;
+  width: calc(100% - 260px); /* Ensure the content area takes up the remaining width */
+  overflow-y: auto; /* Scrollable content if results are long */
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Card style for results */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.card a {
+  color: #007bb5;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.results-container .card {
+  width: 48%; /* Two cards per row */
+  box-sizing: border-box;
+}
+
+/* Editable text box for combined output */
+.editable-text {
+  width: 100%;
+  height: auto; /* Let the height adjust based on the content */
+  min-height: 200px; /* Set a minimum height for better display */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allow resizing vertically */
+}
+
+/* Styling for the button */
+button {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style for the combined output section */
+.combined-data-container {
+  margin-top: 20px;
+}
+
+.combined-data-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.editable-output {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 150px;
+  white-space: pre-wrap; /* Preserve new lines */
+  font-family: monospace;
+  overflow-y: auto;
+}
+
+.editable-output:empty:before {
+  content: "Edit the combined output here...";
+  color: #888;
+}
