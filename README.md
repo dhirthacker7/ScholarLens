@@ -1,8 +1,8 @@
-# Assignment 4: End-to-end research canvas tool
+# End-to-end research canvas tool
 
-## Project Overview
+## Overview
 
-This repository focuses on building an end-to-end research tool utilizing an Airflow pipeline to process documents, store vectors for fast similarity searches, and create a multi-agent research interface. The project involves parsing documents using Docling, storing vectors in Pinecone, and employing Langraph for a multi-agent system. Additionally, a user interaction interface, developed using Copilot coagent, will allow users to conduct research and save findings, culminating in a professional PDF report and structured Codelabs for clarity and future use.
+This project focuses on building an end-to-end research tool utilizing an Airflow pipeline to process documents, store vectors for fast similarity searches, and create a multi-agent research interface. The project involves parsing documents using Docling, storing vectors in Pinecone, and employing Langraph for a multi-agent system. Additionally, a user interaction interface, developed using Copilot coagent, will allow users to conduct research and save findings, culminating in a professional PDF report and structured Codelabs for clarity and future use.
 
 
 ## Data Flow and Architecture
@@ -11,9 +11,7 @@ Below is an overview of the data flow and ETL architecture used in the project:
 ![Airflow ETL and Data Flow Architecture](./diagram/research_tool_architecture.png)
 
 ## Live Application Links
-- **Deployed Application**: [Streamlit App Link]
 - **Google Codelabs**: [[code labs](https://codelabs-preview.appspot.com/?file_id=11XVdlzZ8DJotFKU9-hZb4OrUASjitlK7xsWqiVxxNzg#0)]
-- **GitHub Repository**: [[GitHub Repo Link](https://github.com/BigData-saturdayT2/research-canvas-tool)]
 
 ## Problem Statement
 Researching, extracting insights, and managing document data can be a cumbersome and time-consuming task, especially when dealing with a large volume of content. The current challenge is to build an end-to-end tool that streamlines this process—starting from document acquisition to processing, vector storage, and intelligent querying—all while providing an interactive user interface. This assignment aims to solve these issues by automating document parsing, embedding generation, and enabling an efficient research experience using multiple agents for enhanced information retrieval.
@@ -96,13 +94,3 @@ docker-compose up
 
 ## Documentation
 - **Codelabs**: [[Codelabs](https://codelabs-preview.appspot.com/?file_id=11XVdlzZ8DJotFKU9-hZb4OrUASjitlK7xsWqiVxxNzg#0)]
-- **Video Walkthrough**: [Video Link](https://northeastern-my.sharepoint.com/:v:/g/personal/gupta_abhinav_northeastern_edu/EbrmYJED725Dms_wuTdLmfwBIWGccsxFCE79aT_SJEOJOw?e=yRpnTq)
-
-## Contribution
-All team members contributed to this project. We attest that no external work was used.
-
-| Name     | Work Done                                                                                           |
-|----------|-----------------------------------------------------------------------------------------------------|
-| Abhinav (36%) | Worked on Web Search Agent, Arxiv agent, Copilot UI, FastAPI integration, Chatbot integration, SmartQuery, Docker |
-| Dheer (32%)    | Worked on RAG agent, NVIDIA model integration, research notes, md conversion, text to pdf extraction, documentation                 |
-| Nishita (32%)  | Worked on architecture diagram creation, Airflow pipeline, S3, Pinecone database, md to codelabs, documentation  |
