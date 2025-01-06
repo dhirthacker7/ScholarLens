@@ -93,5 +93,5 @@ docker-compose up
 ```
 
 ## Documentation
-[SchloarLens](https://docs.google.com/document/d/16bdmJCai4nnWPxMedN7GGskntEpMCWTvFq_iS3fZAY0/edit?usp=sharing)
+[Google Docs - Documentation](https://docs.google.com/document/d/16bdmJCai4nnWPxMedN7GGskntEpMCWTvFq_iS3fZAY0/edit?usp=sharing)
 
