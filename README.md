@@ -1,4 +1,4 @@
-# End-to-end research canvas tool
+# ScholarLens
 
 ## Overview
 
