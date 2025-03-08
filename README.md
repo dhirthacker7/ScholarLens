@@ -10,9 +10,6 @@ Below is an overview of the data flow and ETL architecture used in the project:
 
 ![Airflow ETL and Data Flow Architecture](./diagram/research_tool_architecture.png)
 
-## Live Application Links
-- **Google Codelabs**: [[code labs](https://codelabs-preview.appspot.com/?file_id=11XVdlzZ8DJotFKU9-hZb4OrUASjitlK7xsWqiVxxNzg#0)]
-
 ## Problem Statement
 Researching, extracting insights, and managing document data can be a cumbersome and time-consuming task, especially when dealing with a large volume of content. The current challenge is to build an end-to-end tool that streamlines this process—starting from document acquisition to processing, vector storage, and intelligent querying—all while providing an interactive user interface. This assignment aims to solve these issues by automating document parsing, embedding generation, and enabling an efficient research experience using multiple agents for enhanced information retrieval.
 
